@@ -1,0 +1,307 @@
+Love languages – App Development   I changed the title. I spoke to a trademark lawyer who said that I need to be careful using the ‘5 Love Languages’ as it’s trademarked.
+
+	•	Describe your main idea / vision – 
+Main idea: To use the concept of love languages to help people to communicate better with each other by offering suggestions of things to do that the other person will appreciate.  Vision: For people to have fulfilling relationships based on open communication
+
+	•	Needs what you want to offer with App – 
+Personal and partner profiles Love language test Attachment style test Sync with calendar and populate with things to do your for partner Reminders of upcoming events Automatic and manual calendar sync Geolocation offers based on country (local suppliers only) Subscription based model APIs with other apps: - Tinder (guarantee a great date) - Flow - Mindfulness Can select your character for your profile then a different character for each other profile. These can then be animated later on with the actions for each prompt Tangible relationship scoring - update your relationship score monthly (character ratings and levels) Gamification??? Suggestions of offers to people on their birthday - partner and friends as well
+
+	•	Describe your potential client – 
+Different categories: 1. Female late 20s - 40s in a relationship, works, successful, knows what she wants from a relationship. High expectations. Disappointed women.
+HOW TO FLIP INTO POSITIVE
+  2. Male late 20s - 40s open to personal growth and development and wanting to get into a relationship or also in one 3. LGBTQ community (based on genderless concept) 4. Teens (maybe release a teen version with appropriate actions) 5. Relationship coaches - to offer their clients - cards 6. Sex shops (they are a bit more classy these days) - they would sell the cards 7. Couples 30+ who are stuck in a rut and need to rekindle the love they had
+HOW TO FLIP INTO POSITIVE 
+8. Potentially corporates as well in terms of how to meaningfully reward employees 9. Governments that want to promote love and harmonious relationships 10. Dating website - Here are some ideas for a great 1st date 
+	•	Preparing yourself for 1st date
+	•	Pre-date and getting people onto the app
+	•	one the date - game/ quiz to help connect if there is awkwardness
+
+Spread the love (link Marmite)
+
+	•	Key Benefits with your app , if we compare with others (emotional or meeting apps) – 
+ Clear actions and suggestions Unlike other apps (more interactive, engaging and fun) Helps to create behaviour change Tangible relationship tracking/ progress/ development Can adjust size of offer/ frequency depending on life event Give to charity/ support good cause
+
+	•	For MVP Development – main functions on app what you want to see – 
+User profile Partner profiles Population of calendar - choice and automated Character selection Subscription model:  1. Free 2. Standard 3. Premium - extra information/ services Free to download
+
+	•	Timeline – When you want to launch your app - 
+Summer 2023 - obviously this never happened…
+
+	•	There is another such app - Love Nudge. It’s the model for what I want to create but better and leveraging AI. 
+
+	•	Marketing - I have someone I can connect with in Estonia who knows about marketing, but I guess it would be advisable to create partnerships in each country. The idea would be to have it in many different languages - it’s not too heavy on that side of things I don’t think. 
+
+	•	Business model: Subscription based - 1 month free Then maybe 0.99 - 1.99 per month Target 250k downloads and repeat customers in  10+ countries Aim for languages: Portuguese, Spanish, French, German, Danish, Swedish, Estonian, Latvian, Lithuanian   Malay, Japanese, Russian, Korean, Thai, Hindi, Punjabi, Mandarin - content may have to be altered for different cultures
+Different levels: Always free (basic features) Paid (additional features) Premium (for people who don’t have time) concierge service?? Things done for them - relationship automation.
+
+
+Considerations Customer support then needs to be in different languages Terms and conditions as well  Simplify cancellation process. You can cancel and sign up with 1 click 
+Design ideas: Gamification - have certain goals - personal/ couple - completed by the other person (create feedback loops) take away stress/ anxiety don’t create competition?? Completion of Love Rings - similar to Apple Watch
+LIMIT SCREEN TIME Don’t create addictive patterns of behaviour Aim to encourage real life Ask to cancel after every 3 months Link with mindfulness Push to analogue  Different colour packs with stands to then display preferences for that week Magnetic set to place on fridge as reminder Calendar with small magnetic pieces to place on fridge on set days
+Dependent on context certain actions carry more weight than others and are more appropriate  FOCUS ON THE PARTNER and their Languages - emphasis on all of them, not just 1
+Mood indicator, which can then link to what is needed at that moment to boost/ improve mood
+This is about having conversations that matter, talking to one another.
+
+This is about both partners working together to understand each other, to learn, to grow and adapt to strive for long-term happiness. Greater fulfillment. 
+
+Limiting the time that people can use the app daily
+Forced break
+Customised
+Personalised
+Social features
+
+NFTs
+Friends leaderboard to compare relationship status How am I doing? My rating vs My partner
+
+
+You are weird, I like you
+
+Blank cards/ Extra pages to add their own suggestions with drawings
+Tick on each page – I like this/ I like this too OR Name box
+ 
+Gap with insert pronoun
+App version, you can choose your character/ partner’s character
+Create a list of your likes
+Set dates against activities in calendar
+Send requests
+Send suggestions
+Edit and create ideas
+ 
+Guide how to use this book.
+This book is meant as a starting point to discover what is important for you and your partner and to have conversations around your preferences. Relationships are complex. We have different needs, wants and desires and often we do not express them. The list of 125 suggestions are categorised by love language. This list is certainly not exhaustive and I would encourage you to add your own elements wherever needed.
+There are several components which allow you to personalise this to you and your partner.
+ 
+ 
+1. 	Gaps are left so that you can fill in your partner’s name or use the pronoun of your choosing
+2. 	You can tick the box, I like this too
+3. 	There are additional pages in each section where you can add your own items
+4. 	There is a heart rating, which shows important this is to you
+5. 	There is a calendar rating which shows how frequent you like this
+ 
+Picture on the front
+Description about the love language on the back
+Description of the activity on the back as well, with suggestions
+ 
+Card decks can be per gender neutral pronouns, special editions, limited
+ 
+App that gives suggestions throughout the year, linked with calendar based on percentages of love languages mapped to the list of ideas.
+ 
+Card and interactive cartoon elements on app, animated.
+ 
+Link with main Quiz - API
+Your percentages – saved to home and can be shared
+Partner percentages – can be saved (several up to 5)
+Colour coded
+ 
+Percentages are mapped to the list and populated throughout the year automatically
+Special dates, like anniversaries and birthday
+FREE
+But ask for a Donation of $1, $3 or $5
+If you like the app. Ask after 1 week, 1 month
+ 
+Users can upload their own/ partner’s
+AI to learn and offer suggestions from all people uploaded
+ 
+Aim better relationships and better communication
+Making the world a better place
+ 
+For certain gifts or activities – discounts with providers
+Eg make the song
+ 
+Translation into many languages
+Local- based suggestions
+ 
+Main database to be uploaded and added to by people. This can then populate calendars. Needs to be moderated. Sex – just stays as sex.
+Notification as an animation of the suggestion
+ 
+Create a template as well for personal wellbeing and things to do to look after yourself based on the love languages (LOVE YOURSELF).
+Mental health ties as well.
+ 
+MASTERMIND FEEDBACK
+ 
+·  	Consider it for friendships
+·  	Being able to add multiple partners
+·  	Proof of concept with existing clients
+·  	Link with high performance habits
+·  	Explore frequency and time for reminders – give people control
+·  	Consider elements that link with mental health
+·  	X Automation – where is the heart – talk about changing behaviours and various studies that show conscious actions lead to positive change
+·  	X Careful about people using this to manipulate others (abuse)
+·  	Segment markets – Men/ Women
+Men – be a better boyfriend
+Women – Get him to understand you
+·  	Gamification to drive behaviours
+·  	Package deal??? Buy 1 get 1 free
+·  	X Risk that it becomes mundane
+·  	Focus on the aspect that it helps to understand communication styles and languages and to appreciate differences – to have conversations around what makes us different, why and how to do things that work for all
+·  	BUSINESS MODEL CANVAS
+·  	Mockups – ask for feedback
+·  	Partner can submit a Wish of the Week (surprise)
+·  	Intercultural elements – relationships/ language
+·  	Link with other apps – Period cycle, meditation, dating apps
+ 
+ 
+How could this be used at work?
+Create an environment of giving at work
+
+GEO LOCATION to partner with small businesses – conscious companies
+
+Parents version of the cards
+Teens versions of the cards
+Kids version of the cards
+Self-care version
+ 
+ 
+Board Game???
+ 
+How do you like to give/ receive love?
+ 
+Languages  ADJUSTMENT of ACTIONS for CULTURES
+
+·  	Malay
+·  	Portuguese
+·  	Spanish
+·  	Japanese
+·  	Russian
+·  	Korean
+·  	Thai
+·  	Hindi
+·  	Punjabi
+Mandarin
+Link with FLOW app - Women’s time of the month
+
+Do cards in Braille  Who can run my community - Sandra?? Community of Love and Laughter
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+The Little Things Questions
+	•	words/ touch
+	•	Time/ act
+	•	gift/ time
+	•	Act/ touch
+	•	touch/ gift
+	•	time/ touch
+	•	Gift/ words
+	•	Time/ words
+	•	Time/ gifts
+	•	Words/ act
+	•	Time/ words
+	•	Acts/ touch
+	•	Words/ gift
+	•	Time/ touch
+	•	Words/ act
+	•	Touch/ time
+	•	Act/ gift
+	•	Words/ time
+	•	Touch/ acts
+	•	Acts/ gift
+	•	Time/ acts
+	•	Gift/ words
+	•	Gift/ act
+	•	Time/ gift
+	•	Acts/ time
+	•	Touch/ gift
+	•	Words/ time
+	•	Gift/ touch
+	•	Acts/ words
+	•	Touch/ words
+Words - 12
+Touch - 11
+Acts- 12
+Time - 13
+Gifts - 12
+How to get to the Core of my Story Brand
+Want to bring more love into relationships and into the world
+Lower the divorce rate by 20%
+	•	What ethical or moral questions does your business help people answer? How?
+	•	Where is your business consciously moving ahead of regulation or where it could be? How?
+	•	What is the best example of how your business creates value for its customers, better than its peers?
+	•	What is the best example of how your business thrive in sudden change and helps others to do it too?
+	•	Don’t you wish for more love and laughter in your relationships? To understand what makes your partner happy?
+	•	Less hassle, time
+	•	Less stress, more joy
+	•	Understand your partner better
+	•	We want our industry to enhance the quality of people’s lives 
+	•	We grow through bringing more compassion and understanding to relationships
+	•	We give you easy ways to build the relationship of your dreams 
+ELEVATOR PITCH
+https://wynter.com/
+https://www.respondent.io/
+How do we divide equity?
+How do we make decisions?
+What happens if someone leaves?
+Can anyone be fired?
+Shareholder call operator 
+What are our personal goals for the company?
+How open are we to change this?
+Will this be our primary activity?
+What happens if this commitment changes?
+What contracts do we need?
+Is anyone investing cash?
+How will the cash be treated? Debt?
+What will we pay ourselves?
+How does this change in the future?
+What are the financing plans?
+How many people are in a relationship?
+How many people have been in a relationship?
+How many people wish that their partner understood them better?
+How many people wish that you understood your partner better?
+Minecraft guides - stories about characters and world
+Bigger eyes for characters
+The ideas need to be ones that people are not doing or people have said that they would like to see. we can do a search and analysis to make sure that these are the ones that are going to make people want to buy into it.
+Let's do a search for 100 things that employees want from their leaders or managers and then we can split it into the five categories.
+Let's do a video deck of product demo 
+Failed.com
+I think now I can add something for kindergarten kids about how to be kinder and more compassionate to each other and give them various ideas. We can do something for teams and having discussion about team elements as well.
+Short pitch
+Rhymes
+Ask questions 
+	•	who has a perfect relationship?
+	•	who knows they could do better?
+	•	who wants to be better?
+Create an animation or a user video about using the cards (kickstarter style)
+Not on the highstreet
+ON EACH CARD Pricing $ or $$ or $$$
+Level in Organisation: Org, Team, Leader
+Time taken Effort Needed
+Comic strip with characters
+Funny but real stories  What is important? How do you like to be recognised?
+What do you value?  Introversion preferences
+Buy one/ fund one
+How to get people to engage..
+Low budget and interaction
+My love language is
+Love is...
+I like...
+I love...
+
+
