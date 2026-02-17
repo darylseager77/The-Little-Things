@@ -1,0 +1,625 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Appreciate U - Prototype</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- SCREEN 1: WELCOME -->
+    <div id="welcome" class="screen active">
+        <div class="container">
+            <div class="logo">Appreciate U</div>
+            <h1>Understand How Your Team Wants to Be Valued</h1>
+            <div class="hero-image">
+                <div class="illustration">👥</div>
+            </div>
+            <p class="subtitle">Most leaders are guessing. We help you know.</p>
+            <button class="btn-primary" onclick="showScreen('quiz-1')">Get Started</button>
+            <p class="link-text">Already have an account? <a href="#" onclick="return false;">Log in</a></p>
+        </div>
+    </div>
+
+    <!-- SCREEN 2-6: QUIZ QUESTIONS (5 total, auto-advance) -->
+    <div id="quiz-1" class="screen">
+        <div class="container">
+            <div class="back-button" onclick="showScreen('welcome')">← Back</div>
+            <div class="progress-info">
+                <p class="question-number">Question 1 of 5</p>
+                <div class="progress-bar">
+                    <div class="progress-fill" style="width: 20%"></div>
+                </div>
+            </div>
+            <h2 class="question">Which is more meaningful to you at work?</h2>
+            <div class="options">
+                <div class="option-card-clickable" onclick="selectAnswer('quiz-2', this)">
+                    <span class="option-text">Regular 1-on-1 time with my manager</span>
+                </div>
+                <div class="option-card-clickable" onclick="selectAnswer('quiz-2', this)">
+                    <span class="option-text">Public recognition in team meetings</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="quiz-2" class="screen">
+        <div class="container">
+            <div class="back-button" onclick="showScreen('quiz-1')">← Back</div>
+            <div class="progress-info">
+                <p class="question-number">Question 2 of 5</p>
+                <div class="progress-bar">
+                    <div class="progress-fill" style="width: 40%"></div>
+                </div>
+            </div>
+            <h2 class="question">When I'm stressed at work, I most appreciate:</h2>
+            <div class="options">
+                <div class="option-card-clickable" onclick="selectAnswer('quiz-3')">
+                    <span class="option-text">Someone helping me with my workload</span>
+                </div>
+                <div class="option-card-clickable" onclick="selectAnswer('quiz-3')">
+                    <span class="option-text">Words of encouragement from my manager</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="quiz-3" class="screen">
+        <div class="container">
+            <div class="back-button" onclick="showScreen('quiz-2')">← Back</div>
+            <div class="progress-info">
+                <p class="question-number">Question 3 of 5</p>
+                <div class="progress-bar">
+                    <div class="progress-fill" style="width: 60%"></div>
+                </div>
+            </div>
+            <h2 class="question">I feel most valued when I receive:</h2>
+            <div class="options">
+                <div class="option-card-clickable" onclick="selectAnswer('quiz-4')">
+                    <span class="option-text">A thoughtful gift or reward</span>
+                </div>
+                <div class="option-card-clickable" onclick="selectAnswer('quiz-4')">
+                    <span class="option-text">Being invited to important meetings</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="quiz-4" class="screen">
+        <div class="container">
+            <div class="back-button" onclick="showScreen('quiz-3')">← Back</div>
+            <div class="progress-info">
+                <p class="question-number">Question 4 of 5</p>
+                <div class="progress-bar">
+                    <div class="progress-fill" style="width: 80%"></div>
+                </div>
+            </div>
+            <h2 class="question">Which would make you feel more appreciated?</h2>
+            <div class="options">
+                <div class="option-card-clickable" onclick="selectAnswer('quiz-5')">
+                    <span class="option-text">My manager offering to take something off my plate</span>
+                </div>
+                <div class="option-card-clickable" onclick="selectAnswer('quiz-5')">
+                    <span class="option-text">A personalized thank you note from my manager</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="quiz-5" class="screen">
+        <div class="container">
+            <div class="back-button" onclick="showScreen('quiz-4')">← Back</div>
+            <div class="progress-info">
+                <p class="question-number">Question 5 of 5</p>
+                <div class="progress-bar">
+                    <div class="progress-fill" style="width: 100%"></div>
+                </div>
+            </div>
+            <h2 class="question">What matters more to you?</h2>
+            <div class="options">
+                <div class="option-card-clickable" onclick="selectAnswer('results')">
+                    <span class="option-text">Being included in team activities and decisions</span>
+                </div>
+                <div class="option-card-clickable" onclick="selectAnswer('results')">
+                    <span class="option-text">Receiving a bonus or extra time off for my efforts</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- SCREEN 5: RESULTS -->
+    <div id="results" class="screen">
+        <div class="container">
+            <h1>Your Appreciation Profile</h1>
+            <div class="character-image">
+                <div class="character">👤</div>
+            </div>
+            <p class="results-intro">Here's how you prefer to be valued at work:</p>
+
+            <div class="results-bars">
+                <div class="result-item">
+                    <div class="result-label">
+                        <span class="emoji">⏰</span>
+                        <span class="category">Quality Time</span>
+                        <span class="percentage">35%</span>
+                    </div>
+                    <div class="bar">
+                        <div class="bar-fill bar-time" style="width: 35%"></div>
+                    </div>
+                </div>
+
+                <div class="result-item">
+                    <div class="result-label">
+                        <span class="emoji">🌟</span>
+                        <span class="category">Recognition</span>
+                        <span class="percentage">25%</span>
+                    </div>
+                    <div class="bar">
+                        <div class="bar-fill bar-recognition" style="width: 25%"></div>
+                    </div>
+                </div>
+
+                <div class="result-item">
+                    <div class="result-label">
+                        <span class="emoji">🤝</span>
+                        <span class="category">Support</span>
+                        <span class="percentage">20%</span>
+                    </div>
+                    <div class="bar">
+                        <div class="bar-fill bar-support" style="width: 20%"></div>
+                    </div>
+                </div>
+
+                <div class="result-item">
+                    <div class="result-label">
+                        <span class="emoji">🎁</span>
+                        <span class="category">Rewards</span>
+                        <span class="percentage">15%</span>
+                    </div>
+                    <div class="bar">
+                        <div class="bar-fill bar-rewards" style="width: 15%"></div>
+                    </div>
+                </div>
+
+                <div class="result-item">
+                    <div class="result-label">
+                        <span class="emoji">👥</span>
+                        <span class="category">Inclusion</span>
+                        <span class="percentage">5%</span>
+                    </div>
+                    <div class="bar">
+                        <div class="bar-fill bar-inclusion" style="width: 5%"></div>
+                    </div>
+                </div>
+            </div>
+
+            <button class="btn-primary" onclick="showScreen('dashboard')">See Dashboard</button>
+            <button class="btn-secondary" onclick="showScreen('full-profile')">View Full Profile</button>
+        </div>
+    </div>
+
+    <!-- SCREEN 6: FULL PROFILE -->
+    <div id="full-profile" class="screen">
+        <div class="header">
+            <span class="menu-icon" onclick="showScreen('dashboard')">←</span>
+            <span class="header-title">My Profile</span>
+            <span class="notification-icon">⚙️</span>
+        </div>
+        <div class="container">
+            <div class="character-image-small">
+                <div class="character-small">👤</div>
+            </div>
+            <h2 class="profile-name">Sam's Appreciation Profile</h2>
+
+            <div class="card">
+                <h3>Your Appreciation Style</h3>
+                <p class="profile-description">You value quality time and recognition above all. Here's what this means for you:</p>
+
+                <div class="results-bars">
+                    <div class="result-item">
+                        <div class="result-label">
+                            <span class="emoji">⏰</span>
+                            <span class="category">Quality Time</span>
+                            <span class="percentage">35%</span>
+                        </div>
+                        <div class="bar">
+                            <div class="bar-fill bar-time" style="width: 35%"></div>
+                        </div>
+                        <p class="category-description">You feel most valued when your manager or teammates spend dedicated time with you - whether that's regular 1-on-1s, grabbing coffee, or having deep conversations about your work and growth.</p>
+                    </div>
+
+                    <div class="result-item">
+                        <div class="result-label">
+                            <span class="emoji">🌟</span>
+                            <span class="category">Recognition</span>
+                            <span class="percentage">25%</span>
+                        </div>
+                        <div class="bar">
+                            <div class="bar-fill bar-recognition" style="width: 25%"></div>
+                        </div>
+                        <p class="category-description">Verbal acknowledgment matters to you. You appreciate when people thank you, recognize your contributions publicly or privately, and give you specific feedback on what you're doing well.</p>
+                    </div>
+
+                    <div class="result-item">
+                        <div class="result-label">
+                            <span class="emoji">🤝</span>
+                            <span class="category">Support</span>
+                            <span class="percentage">20%</span>
+                        </div>
+                        <div class="bar">
+                            <div class="bar-fill bar-support" style="width: 20%"></div>
+                        </div>
+                        <p class="category-description">Actions speak volumes. You value when others help you with your workload, remove blockers, or provide flexibility when you need it.</p>
+                    </div>
+
+                    <div class="result-item">
+                        <div class="result-label">
+                            <span class="emoji">🎁</span>
+                            <span class="category">Rewards</span>
+                            <span class="percentage">15%</span>
+                        </div>
+                        <div class="bar">
+                            <div class="bar-fill bar-rewards" style="width: 15%"></div>
+                        </div>
+                        <p class="category-description">Tangible appreciation matters, whether that's bonuses, gifts, extra time off, or learning opportunities. You like when appreciation comes with something concrete.</p>
+                    </div>
+
+                    <div class="result-item">
+                        <div class="result-label">
+                            <span class="emoji">👥</span>
+                            <span class="category">Inclusion</span>
+                            <span class="percentage">5%</span>
+                        </div>
+                        <div class="bar">
+                            <div class="bar-fill bar-inclusion" style="width: 5%"></div>
+                        </div>
+                        <p class="category-description">Being part of the team is important to you. You value being invited to meetings, included in decisions, and participating in team activities.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <h3>Share Your Profile</h3>
+                <p>Help your manager understand how you prefer to be appreciated:</p>
+                <button class="btn-primary" onclick="alert('Share link copied! Send to your manager.')">Share with Manager</button>
+                <button class="btn-secondary" onclick="alert('Share link copied! Send to your team.')">Share with Team</button>
+            </div>
+
+            <div class="card">
+                <h3>Update Your Profile</h3>
+                <p class="profile-note">Your preferences might change over time. Retake the quiz every few months to keep your profile current.</p>
+                <button class="btn-link" onclick="showScreen('quiz-1')">Retake Quiz</button>
+            </div>
+
+            <button class="btn-link" onclick="showScreen('dashboard')">Back to Dashboard</button>
+        </div>
+    </div>
+
+    <!-- SCREEN 7: DASHBOARD (Employee) -->
+    <div id="dashboard" class="screen">
+        <div class="header">
+            <span class="menu-icon">☰</span>
+            <span class="header-title">Appreciate U</span>
+            <span class="notification-icon">🔔</span>
+        </div>
+        <div class="container">
+            <h2 class="greeting">Hey Sam! 👋</h2>
+
+            <div class="card checkin-card">
+                <h3>Quick Check-in</h3>
+                <p>How's your week?</p>
+                <div class="emoji-selector">
+                    <button class="emoji-btn" onclick="showScreen('checkin-1')">😰</button>
+                    <button class="emoji-btn" onclick="showScreen('checkin-1')">😟</button>
+                    <button class="emoji-btn" onclick="showScreen('checkin-1')">😐</button>
+                    <button class="emoji-btn" onclick="showScreen('checkin-1')">🙂</button>
+                    <button class="emoji-btn" onclick="showScreen('checkin-1')">😊</button>
+                </div>
+            </div>
+
+            <div class="card">
+                <h3>Your Top Ways:</h3>
+                <div class="top-ways">
+                    <div class="way-item"><span class="emoji">⏰</span> Quality Time</div>
+                    <div class="way-item"><span class="emoji">🌟</span> Recognition</div>
+                    <div class="way-item"><span class="emoji">🤝</span> Support</div>
+                </div>
+            </div>
+
+            <div class="card">
+                <h3>Recent Recognition</h3>
+                <div class="recognition-item">
+                    <p class="recognition-message">"Great job on the project!"</p>
+                    <p class="recognition-from">- Alex (2 days ago)</p>
+                </div>
+            </div>
+
+            <button class="btn-link" onclick="showScreen('full-profile')">View Full Profile</button>
+
+            <div class="demo-switch">
+                <p class="demo-note">Demo: Switch to Manager View</p>
+                <button class="btn-secondary" onclick="showScreen('manager-dashboard')">Manager Dashboard</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- SCREEN 7: CHECK-IN STEP 1 -->
+    <div id="checkin-1" class="screen">
+        <div class="container centered">
+            <div class="close-button" onclick="showScreen('dashboard')">✕</div>
+            <h2>Quick Check-in</h2>
+            <p class="checkin-question">How are you feeling this week?</p>
+
+            <div class="emoji-grid">
+                <button class="emoji-large" onclick="showScreen('checkin-2')">😰</button>
+                <button class="emoji-large" onclick="showScreen('checkin-2')">😟</button>
+                <button class="emoji-large" onclick="showScreen('checkin-2')">😐</button>
+                <button class="emoji-large" onclick="showScreen('checkin-2')">🙂</button>
+                <button class="emoji-large" onclick="showScreen('checkin-2')">😊</button>
+            </div>
+
+            <p class="instruction-text">Tap one to continue</p>
+        </div>
+    </div>
+
+    <!-- SCREEN 8: CHECK-IN STEP 2 -->
+    <div id="checkin-2" class="screen">
+        <div class="container">
+            <div class="back-button" onclick="showScreen('checkin-1')">← Back</div>
+            <h2>What would be most helpful right now?</h2>
+            <p class="instruction-text">(Select all that apply)</p>
+
+            <div class="checkbox-options">
+                <label class="checkbox-option">
+                    <input type="checkbox">
+                    <span class="checkmark"></span>
+                    <span class="option-text">Some 1-on-1 time</span>
+                </label>
+                <label class="checkbox-option">
+                    <input type="checkbox">
+                    <span class="checkmark"></span>
+                    <span class="option-text">Acknowledgment of my work</span>
+                </label>
+                <label class="checkbox-option">
+                    <input type="checkbox">
+                    <span class="checkmark"></span>
+                    <span class="option-text">Help with my workload</span>
+                </label>
+                <label class="checkbox-option">
+                    <input type="checkbox">
+                    <span class="checkmark"></span>
+                    <span class="option-text">A break or time off</span>
+                </label>
+                <label class="checkbox-option">
+                    <input type="checkbox">
+                    <span class="checkmark"></span>
+                    <span class="option-text">To be included in decisions</span>
+                </label>
+                <label class="checkbox-option">
+                    <input type="checkbox">
+                    <span class="checkmark"></span>
+                    <span class="option-text">Nothing needed right now</span>
+                </label>
+            </div>
+
+            <button class="btn-primary" onclick="submitCheckin()">Submit</button>
+        </div>
+    </div>
+
+    <!-- SCREEN 9: SEND RECOGNITION -->
+    <div id="recognition" class="screen">
+        <div class="container">
+            <div class="back-button" onclick="showScreen('dashboard')">← Back</div>
+            <h2>Send Recognition</h2>
+
+            <div class="form-group">
+                <label>To:</label>
+                <select class="select-input">
+                    <option>Sam</option>
+                    <option>Jordan</option>
+                    <option>Alex</option>
+                    <option>Taylor</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label>Type:</label>
+                <div class="type-options">
+                    <button class="type-btn active">🌟 Recognition</button>
+                    <button class="type-btn">⏰ Quality Time</button>
+                    <button class="type-btn">🎁 Reward</button>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label>Message:</label>
+                <textarea class="textarea-input" rows="4" placeholder="Write your message..."></textarea>
+            </div>
+
+            <label class="checkbox-option">
+                <input type="checkbox">
+                <span class="checkmark"></span>
+                <span class="option-text">Make this public to the team</span>
+            </label>
+
+            <button class="btn-primary" onclick="sendRecognition()">Send Thanks</button>
+        </div>
+    </div>
+
+    <!-- SCREEN 10: MANAGER DASHBOARD -->
+    <div id="manager-dashboard" class="screen">
+        <div class="header">
+            <span class="menu-icon">☰</span>
+            <span class="header-title">Manager Dashboard</span>
+            <span class="notification-icon">📊</span>
+        </div>
+        <div class="container">
+            <h2 class="greeting">Welcome, Manager! 👋</h2>
+
+            <div class="card">
+                <h3>Team Pulse</h3>
+                <div class="pulse-row">
+                    <div class="pulse-stat">
+                        <div class="stat-value">🙂</div>
+                        <div class="stat-label">Overall Mood</div>
+                        <div class="stat-detail">Good this week</div>
+                    </div>
+                    <div class="pulse-stat">
+                        <div class="stat-value">75%</div>
+                        <div class="stat-label">Check-in Rate</div>
+                        <div class="stat-detail">3 of 4 this week</div>
+                    </div>
+                    <div class="pulse-stat">
+                        <div class="stat-value">12</div>
+                        <div class="stat-label">Recognition Sent</div>
+                        <div class="stat-detail">This month</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card alert-card">
+                <h3>⚠️ Needs Your Attention</h3>
+                <div class="team-member-alert">
+                    <p><strong>👤 Jordan</strong></p>
+                    <p class="alert-message">Expressed need for help with workload (2 days ago)</p>
+                    <p class="suggestion-text"><strong>Suggested action:</strong> Jordan values Support (45%). Consider scheduling a 1-on-1 to discuss priorities, offering to redistribute tasks, or providing additional resources.</p>
+                    <div class="action-buttons">
+                        <button class="btn-small" onclick="showScreen('recognition')">Send Support</button>
+                        <button class="btn-small btn-outline">Schedule 1-on-1</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <h3>Suggested Actions This Week</h3>
+                <div class="suggestion-list">
+                    <div class="suggestion-item">
+                        <span class="emoji">⏰</span>
+                        <div class="suggestion-content">
+                            <p class="suggestion-title">Check in with Sam</p>
+                            <p class="suggestion-reason">Sam values Quality Time (35%). Haven't had 1-on-1 in 2 weeks.</p>
+                        </div>
+                        <button class="btn-link-small">Schedule</button>
+                    </div>
+                    <div class="suggestion-item">
+                        <span class="emoji">🌟</span>
+                        <div class="suggestion-content">
+                            <p class="suggestion-title">Recognize Alex publicly</p>
+                            <p class="suggestion-reason">Alex values Recognition (40%). Great work on Q1 project.</p>
+                        </div>
+                        <button class="btn-link-small" onclick="showScreen('recognition')">Send</button>
+                    </div>
+                    <div class="suggestion-item">
+                        <span class="emoji">👥</span>
+                        <div class="suggestion-content">
+                            <p class="suggestion-title">Include Taylor in planning</p>
+                            <p class="suggestion-reason">Taylor values Inclusion (35%). Invite to next strategy meeting.</p>
+                        </div>
+                        <button class="btn-link-small">Add</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <h3>Team Overview</h3>
+                <p class="section-description">Click on any team member to see their full appreciation profile and get personalized suggestions.</p>
+
+                <div class="team-member-list">
+                    <div class="team-member-card">
+                        <div class="member-info">
+                            <span class="member-avatar">👤</span>
+                            <div class="member-details">
+                                <span class="member-name">Sam</span>
+                                <span class="member-subtitle">Product Designer</span>
+                            </div>
+                        </div>
+                        <div class="member-tags">
+                            <span class="tag">⏰ 35%</span>
+                            <span class="tag">🌟 25%</span>
+                            <span class="tag">🤝 20%</span>
+                        </div>
+                        <button class="btn-link-small" onclick="showScreen('full-profile')">View</button>
+                    </div>
+
+                    <div class="team-member-card">
+                        <div class="member-info">
+                            <span class="member-avatar">👤</span>
+                            <div class="member-details">
+                                <span class="member-name">Jordan</span>
+                                <span class="member-subtitle">Software Engineer</span>
+                            </div>
+                        </div>
+                        <div class="member-tags">
+                            <span class="tag">🤝 45%</span>
+                            <span class="tag">🎁 25%</span>
+                            <span class="tag">⏰ 15%</span>
+                        </div>
+                        <button class="btn-link-small" onclick="showScreen('full-profile')">View</button>
+                    </div>
+
+                    <div class="team-member-card">
+                        <div class="member-info">
+                            <span class="member-avatar">👤</span>
+                            <div class="member-details">
+                                <span class="member-name">Alex</span>
+                                <span class="member-subtitle">Marketing Manager</span>
+                            </div>
+                        </div>
+                        <div class="member-tags">
+                            <span class="tag">🌟 40%</span>
+                            <span class="tag">👥 30%</span>
+                            <span class="tag">🎁 20%</span>
+                        </div>
+                        <button class="btn-link-small" onclick="showScreen('full-profile')">View</button>
+                    </div>
+
+                    <div class="team-member-card">
+                        <div class="member-info">
+                            <span class="member-avatar">👤</span>
+                            <div class="member-details">
+                                <span class="member-name">Taylor</span>
+                                <span class="member-subtitle">Data Analyst</span>
+                            </div>
+                        </div>
+                        <div class="member-tags">
+                            <span class="tag">👥 35%</span>
+                            <span class="tag">⏰ 30%</span>
+                            <span class="tag">🤝 20%</span>
+                        </div>
+                        <button class="btn-link-small" onclick="showScreen('full-profile')">View</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <h3>Team Insights</h3>
+                <p>Your team's top appreciation languages:</p>
+                <div class="team-breakdown">
+                    <div class="breakdown-item">
+                        <span class="emoji-large-stat">🤝</span>
+                        <span class="breakdown-label">Support</span>
+                        <span class="breakdown-percentage">28%</span>
+                    </div>
+                    <div class="breakdown-item">
+                        <span class="emoji-large-stat">⏰</span>
+                        <span class="breakdown-label">Quality Time</span>
+                        <span class="breakdown-percentage">26%</span>
+                    </div>
+                    <div class="breakdown-item">
+                        <span class="emoji-large-stat">🌟</span>
+                        <span class="breakdown-label">Recognition</span>
+                        <span class="breakdown-percentage">24%</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="demo-switch">
+                <p class="demo-note">Demo: Switch to Employee View</p>
+                <button class="btn-secondary" onclick="showScreen('dashboard')">Employee Dashboard</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
