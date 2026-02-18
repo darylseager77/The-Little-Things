@@ -54,6 +54,15 @@ function sendRecognition() {
     showScreen('dashboard');
 }
 
+// Handle initial load - check for hash navigation to manager view
+document.addEventListener('DOMContentLoaded', function() {
+    const hash = window.location.hash;
+    if (hash === '#manager-start') {
+        // Show manager dashboard directly
+        showScreen('manager-dashboard');
+    }
+});
+
 // Radio button visual feedback
 document.addEventListener('DOMContentLoaded', function() {
     // Handle radio button clicks for better UX
