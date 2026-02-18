@@ -19,41 +19,44 @@
 
         /* Hero Section */
         .hero {
-            background: linear-gradient(135deg, #4f46e5 0%, #6366f1 100%);
-            color: white;
-            padding: 80px 20px;
+            background: white;
+            color: #111827;
+            padding: 60px 20px;
             text-align: center;
+            border-bottom: 1px solid #e5e7eb;
         }
         .hero-logo {
             width: 100px;
             height: 100px;
             margin: 0 auto 24px;
-            filter: drop-shadow(0 4px 12px rgba(255,255,255,0.2));
+            filter: drop-shadow(0 4px 12px rgba(79, 70, 229, 0.2));
         }
         .hero h1 {
-            font-size: 48px;
+            font-size: 42px;
             font-weight: 700;
-            margin-bottom: 16px;
+            margin-bottom: 12px;
+            color: #4f46e5;
         }
         .hero h2 {
-            font-size: 32px;
+            font-size: 28px;
             font-weight: 600;
-            margin-bottom: 12px;
-            opacity: 0.95;
+            margin-bottom: 8px;
+            color: #111827;
         }
         .hero p {
-            font-size: 20px;
-            opacity: 0.9;
+            font-size: 18px;
+            color: #6b7280;
             max-width: 600px;
             margin: 0 auto;
         }
         .hero-badge {
             display: inline-block;
-            background: rgba(255,255,255,0.2);
-            padding: 8px 16px;
+            background: #f3f4f6;
+            color: #6b7280;
+            padding: 6px 14px;
             border-radius: 20px;
-            font-size: 14px;
-            margin-top: 20px;
+            font-size: 13px;
+            margin-top: 16px;
         }
 
         /* Container */
@@ -63,129 +66,171 @@
             padding: 0 20px;
         }
 
+        /* Two Column Section */
+        .two-column-section {
+            background: #f9fafb;
+            padding: 50px 20px;
+        }
+        .two-column-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 40px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        @media (max-width: 968px) {
+            .two-column-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+
         /* Stats Section */
         .stats-section {
             background: white;
-            padding: 60px 20px;
+            padding: 32px;
+            border-radius: 16px;
+            border: 2px solid #e5e7eb;
         }
         .stats-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-            gap: 24px;
-            margin-top: 40px;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 16px;
+            margin-top: 24px;
         }
         .stat-card {
             background: #f9fafb;
             border: 2px solid #e5e7eb;
-            border-radius: 16px;
-            padding: 32px;
+            border-radius: 12px;
+            padding: 20px;
             text-align: center;
             transition: all 0.3s;
         }
         .stat-card:hover {
-            transform: translateY(-4px);
-            box-shadow: 0 12px 24px rgba(79, 70, 229, 0.15);
+            transform: translateY(-2px);
+            box-shadow: 0 8px 16px rgba(79, 70, 229, 0.12);
             border-color: #4f46e5;
         }
         .stat-number {
-            font-size: 56px;
+            font-size: 36px;
             font-weight: 800;
             color: #4f46e5;
-            margin-bottom: 8px;
+            margin-bottom: 6px;
         }
         .stat-label {
-            font-size: 16px;
+            font-size: 14px;
             color: #6b7280;
             font-weight: 600;
         }
         .stat-description {
-            font-size: 14px;
+            font-size: 11px;
             color: #9ca3af;
-            margin-top: 8px;
+            margin-top: 4px;
+            line-height: 1.4;
+        }
+        .column-title {
+            font-size: 24px;
+            font-weight: 700;
+            color: #111827;
+            margin-bottom: 8px;
+        }
+        .column-subtitle {
+            font-size: 14px;
+            color: #6b7280;
+            margin-bottom: 16px;
         }
 
         /* Problem/Solution Section */
         .problem-solution {
-            background: linear-gradient(to bottom, #fef3c7 0%, #fde68a 100%);
-            padding: 60px 20px;
+            background: white;
+            padding: 32px;
+            border-radius: 16px;
+            border: 2px solid #e5e7eb;
         }
         .section-title {
-            font-size: 36px;
+            font-size: 28px;
             font-weight: 700;
             text-align: center;
-            margin-bottom: 16px;
+            margin-bottom: 12px;
             color: #111827;
         }
         .section-subtitle {
-            font-size: 18px;
+            font-size: 15px;
             text-align: center;
             color: #6b7280;
             max-width: 700px;
-            margin: 0 auto 40px;
+            margin: 0 auto 24px;
         }
         .problem-box {
-            background: white;
-            border-left: 6px solid #ef4444;
-            padding: 32px;
-            border-radius: 12px;
-            margin-bottom: 24px;
+            background: #fef2f2;
+            border-left: 4px solid #ef4444;
+            padding: 20px;
+            border-radius: 8px;
+            margin-bottom: 16px;
         }
         .solution-box {
-            background: white;
-            border-left: 6px solid #10b981;
-            padding: 32px;
-            border-radius: 12px;
+            background: #f0fdf4;
+            border-left: 4px solid #10b981;
+            padding: 20px;
+            border-radius: 8px;
         }
         .box-title {
-            font-size: 24px;
+            font-size: 18px;
             font-weight: 700;
-            margin-bottom: 16px;
+            margin-bottom: 10px;
             color: #111827;
         }
         .box-content {
-            font-size: 16px;
+            font-size: 14px;
             color: #6b7280;
-            line-height: 1.8;
+            line-height: 1.6;
         }
 
         /* Languages Grid */
         .languages-section {
             background: white;
-            padding: 60px 20px;
+            padding: 40px 20px;
         }
         .languages-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
-            gap: 20px;
-            margin-top: 40px;
+            grid-template-columns: repeat(5, 1fr);
+            gap: 16px;
+            margin-top: 24px;
+            max-width: 1200px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        @media (max-width: 968px) {
+            .languages-grid {
+                grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+            }
         }
         .language-card {
             background: linear-gradient(135deg, #f9fafb 0%, #f3f4f6 100%);
             border: 2px solid #e5e7eb;
-            border-radius: 16px;
-            padding: 28px 20px;
+            border-radius: 12px;
+            padding: 20px 16px;
             text-align: center;
             transition: all 0.3s;
         }
         .language-card:hover {
             transform: scale(1.05);
             border-color: #4f46e5;
-            box-shadow: 0 8px 16px rgba(79, 70, 229, 0.15);
+            box-shadow: 0 6px 12px rgba(79, 70, 229, 0.15);
         }
         .language-emoji {
-            font-size: 48px;
-            margin-bottom: 12px;
-        }
-        .language-title {
-            font-size: 18px;
-            font-weight: 700;
-            color: #111827;
+            font-size: 36px;
             margin-bottom: 8px;
         }
+        .language-title {
+            font-size: 15px;
+            font-weight: 700;
+            color: #111827;
+            margin-bottom: 6px;
+        }
         .language-desc {
-            font-size: 13px;
+            font-size: 11px;
             color: #6b7280;
-            line-height: 1.5;
+            line-height: 1.4;
         }
 
         /* CTA Section */
@@ -234,27 +279,35 @@
         /* Features Grid */
         .features-section {
             background: #f9fafb;
-            padding: 60px 20px;
+            padding: 40px 20px;
         }
         .features-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-            gap: 24px;
-            margin-top: 40px;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 20px;
+            margin-top: 24px;
+            max-width: 1200px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        @media (max-width: 968px) {
+            .features-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
         }
         .feature-card {
             background: white;
             border: 2px solid #e5e7eb;
-            border-radius: 16px;
-            padding: 28px;
+            border-radius: 12px;
+            padding: 24px;
             text-align: center;
         }
         .feature-emoji {
-            font-size: 48px;
-            margin-bottom: 16px;
+            font-size: 40px;
+            margin-bottom: 12px;
         }
         .feature-title {
-            font-size: 18px;
+            font-size: 15px;
             font-weight: 700;
             color: #111827;
         }
@@ -281,10 +334,12 @@
 
         /* Responsive */
         @media (max-width: 768px) {
-            .hero h1 { font-size: 36px; }
-            .hero h2 { font-size: 24px; }
-            .section-title { font-size: 28px; }
-            .stat-number { font-size: 42px; }
+            .hero h1 { font-size: 32px; }
+            .hero h2 { font-size: 22px; }
+            .section-title { font-size: 24px; }
+            .column-title { font-size: 20px; }
+            .stat-number { font-size: 28px; }
+            .stats-grid { grid-template-columns: 1fr; }
         }
     </style>
 </head>
@@ -303,72 +358,74 @@
         <div class="hero-badge">Interactive Prototype - February 2026</div>
     </div>
 
-    <!-- Stats Section -->
-    <div class="stats-section">
-        <div class="container">
-            <h2 class="section-title">The Numbers Don't Lie</h2>
-            <p class="section-subtitle">Generic recognition fails. Personalized appreciation drives real business outcomes.</p>
+    <!-- Two Column Section: Stats + Problem/Solution -->
+    <div class="two-column-section">
+        <div class="two-column-grid">
+            <!-- Left Column: Stats -->
+            <div class="stats-section">
+                <h3 class="column-title">The Numbers Don't Lie</h3>
+                <p class="column-subtitle">Generic recognition fails. Personalized appreciation drives results.</p>
 
-            <div class="stats-grid">
-                <div class="stat-card">
-                    <div class="stat-number">45%</div>
-                    <div class="stat-label">Less Turnover</div>
-                    <div class="stat-description">with high-quality recognition after 2 years (Gallup 2024)</div>
-                </div>
+                <div class="stats-grid">
+                    <div class="stat-card">
+                        <div class="stat-number">45%</div>
+                        <div class="stat-label">Less Turnover</div>
+                        <div class="stat-description">with high-quality recognition after 2 years (Gallup 2024)</div>
+                    </div>
 
-                <div class="stat-card">
-                    <div class="stat-number">65%</div>
-                    <div class="stat-label">Less Job Hunting</div>
-                    <div class="stat-description">when employees get personalized appreciation (Gallup 2024)</div>
-                </div>
+                    <div class="stat-card">
+                        <div class="stat-number">65%</div>
+                        <div class="stat-label">Less Job Hunting</div>
+                        <div class="stat-description">when employees get personalized appreciation (Gallup 2024)</div>
+                    </div>
 
-                <div class="stat-card">
-                    <div class="stat-number">10%</div>
-                    <div class="stat-label">Are Ever Asked</div>
-                    <div class="stat-description">how they prefer to be recognized (Gallup 2024)</div>
-                </div>
+                    <div class="stat-card">
+                        <div class="stat-number">10%</div>
+                        <div class="stat-label">Are Ever Asked</div>
+                        <div class="stat-description">how they prefer to be recognized (Gallup 2024)</div>
+                    </div>
 
-                <div class="stat-card">
-                    <div class="stat-number">$8.9T</div>
-                    <div class="stat-label">Lost Productivity</div>
-                    <div class="stat-description">from disengaged employees globally (Gallup 2024)</div>
-                </div>
+                    <div class="stat-card">
+                        <div class="stat-number">$8.9T</div>
+                        <div class="stat-label">Lost Productivity</div>
+                        <div class="stat-description">from disengaged employees globally (Gallup 2024)</div>
+                    </div>
 
-                <div class="stat-card">
-                    <div class="stat-number">50-200%</div>
-                    <div class="stat-label">Cost to Replace</div>
-                    <div class="stat-description">an employee who leaves (SHRM)</div>
-                </div>
+                    <div class="stat-card">
+                        <div class="stat-number">$50k-$200k</div>
+                        <div class="stat-label">Cost to Replace</div>
+                        <div class="stat-description">an employee who leaves (SHRM)</div>
+                    </div>
 
-                <div class="stat-card">
-                    <div class="stat-number">31%</div>
-                    <div class="stat-label">Lower Turnover</div>
-                    <div class="stat-description">with strong recognition programs (Gallup)</div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- Problem/Solution Section -->
-    <div class="problem-solution">
-        <div class="container">
-            <h2 class="section-title">The Problem & The Solution</h2>
-
-            <div class="problem-box">
-                <div class="box-title">❌ The Problem</div>
-                <div class="box-content">
-                    <p style="margin-bottom: 12px;">Most employee recognition programs fail because they're one-size-fits-all. What makes one person feel valued (public recognition in a team meeting) might make another person uncomfortable.</p>
-
-                    <p><strong>The result?</strong> Your best people leave. Teams disengage. Managers burn out trying to figure out what their people actually need. You're spending money on recognition programs that don't move the needle on retention or performance.</p>
+                    <div class="stat-card">
+                        <div class="stat-number">31%</div>
+                        <div class="stat-label">Lower Turnover</div>
+                        <div class="stat-description">with strong recognition programs (Gallup)</div>
+                    </div>
                 </div>
             </div>
 
-            <div class="solution-box">
-                <div class="box-title">✅ The Solution</div>
-                <div class="box-content">
-                    <p style="margin-bottom: 12px;"><strong>Appreciate U helps leaders understand each team member's unique appreciation preferences</strong> and gives them personalized suggestions for meaningful recognition.</p>
+            <!-- Right Column: Problem/Solution -->
+            <div class="problem-solution">
+                <h3 class="column-title">The Problem & The Solution</h3>
+                <p class="column-subtitle" style="text-align: left; margin-bottom: 20px;">Why generic recognition fails and what actually works.</p>
 
-                    <p>When people feel valued in the way that matters to <em>them</em>, they stay longer, perform better, and actually want to show up to work. Less guesswork, better results.</p>
+                <div class="problem-box">
+                    <div class="box-title">❌ The Problem</div>
+                    <div class="box-content">
+                        <p style="margin-bottom: 10px;">Most employee recognition programs fail because they're one-size-fits-all. What makes one person feel valued might make another uncomfortable.</p>
+
+                        <p><strong>The result?</strong> Your best people leave. Teams disengage. Managers burn out. You're spending money on recognition that doesn't move the needle.</p>
+                    </div>
+                </div>
+
+                <div class="solution-box">
+                    <div class="box-title">✅ The Solution</div>
+                    <div class="box-content">
+                        <p style="margin-bottom: 10px;"><strong>Appreciate U helps leaders understand each team member's unique preferences</strong> and gives them personalized suggestions.</p>
+
+                        <p>When people feel valued in the way that matters to <em>them</em>, they stay longer, perform better, and actually want to show up to work.</p>
+                    </div>
                 </div>
             </div>
         </div>
