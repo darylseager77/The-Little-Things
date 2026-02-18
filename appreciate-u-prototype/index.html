@@ -30,6 +30,11 @@
             height: 100px;
             margin: 0 auto 24px;
             filter: drop-shadow(0 4px 12px rgba(79, 70, 229, 0.2));
+            animation: logoFloat 3s ease-in-out infinite;
+        }
+        @keyframes logoFloat {
+            0%, 100% { transform: translateY(0px); }
+            50% { transform: translateY(-8px); }
         }
         .hero h1 {
             font-size: 42px;
@@ -347,10 +352,10 @@
     <!-- Hero Section -->
     <div class="hero">
         <svg class="hero-logo" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
-            <circle cx="50" cy="50" r="48" fill="white" opacity="0.15"/>
-            <path d="M 30 45 Q 30 35, 35 35 Q 40 35, 40 45 Q 40 55, 35 55 Q 30 55, 30 45 Z" fill="white"/>
-            <path d="M 60 45 Q 60 35, 65 35 Q 70 35, 70 45 Q 70 55, 65 55 Q 60 55, 60 45 Z" fill="white"/>
-            <path d="M 25 60 Q 50 75, 75 60" stroke="white" stroke-width="4" fill="none" stroke-linecap="round"/>
+            <circle cx="50" cy="50" r="48" fill="#4f46e5" opacity="0.1"/>
+            <path d="M 30 45 Q 30 35, 35 35 Q 40 35, 40 45 Q 40 55, 35 55 Q 30 55, 30 45 Z" fill="#4f46e5"/>
+            <path d="M 60 45 Q 60 35, 65 35 Q 70 35, 70 45 Q 70 55, 65 55 Q 60 55, 60 45 Z" fill="#4f46e5"/>
+            <path d="M 25 60 Q 50 75, 75 60" stroke="#4f46e5" stroke-width="4" fill="none" stroke-linecap="round"/>
         </svg>
         <h1>Appreciate U</h1>
         <h2>Understand How Your Team Wants to Be Valued</h2>
