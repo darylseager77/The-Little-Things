@@ -77,3 +77,11 @@ body {
   animation: logoFloat 3s ease-in-out infinite;
   display: inline-block;
 }
+
+/* Quiz option hover effects */
+.quiz-option:hover {
+  border-color: var(--primary) !important;
+  background: #f5f3ff !important;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(79, 70, 229, 0.15) !important;
+}
