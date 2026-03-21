@@ -1098,18 +1098,6 @@ function ManagerPage() {
             <span style={{ fontSize: '11px', fontWeight: activeTab === 'myteam' ? '700' : '500' }}>My Team</span>
           </button>
 
-          <Link href="/dashboard" style={{
-            flex: 1, display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '3px',
-            padding: '10px 8px', textDecoration: 'none', color: '#9ca3af',
-            borderTop: '3px solid transparent'
-          }}>
-            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-              <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/>
-              <circle cx="12" cy="7" r="4"/>
-            </svg>
-            <span style={{ fontSize: '11px', fontWeight: '500' }}>My View</span>
-          </Link>
-
         </nav>
       </div>
     </div>
