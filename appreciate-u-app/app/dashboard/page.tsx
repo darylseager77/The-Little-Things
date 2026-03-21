@@ -67,7 +67,6 @@ function DashboardContent() {
     router.replace(`/dashboard?tab=${tab}`, { scroll: false })
   }
   const [user, setUser] = useState<any>(null)
-  const [userRole, setUserRole] = useState<string>('')
   const [profile, setProfile] = useState<AppreciationProfile | null>(null)
   const [weekCheckIns, setWeekCheckIns] = useState<CheckIn[]>([])
   const [, setRecentNeeds] = useState<CheckIn[]>([])
@@ -88,10 +87,6 @@ function DashboardContent() {
     const { data: { user } } = await supabase.auth.getUser()
     if (!user) { router.push('/login'); return }
     setUser(user)
-
-    const { data: profileData } = await supabase
-      .from('profiles').select('role').eq('id', user.id).single()
-    if (profileData) setUserRole(profileData.role)
 
     const { data: appreciationData } = await supabase
       .from('appreciation_profiles')
@@ -552,21 +547,6 @@ function DashboardContent() {
             <span style={{ fontSize: '11px', fontWeight: activeTab === 'profile' ? '700' : '500' }}>My Profile</span>
           </button>
 
-          {userRole === 'manager' && (
-            <Link href="/manager" style={{
-              flex: 1, display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '3px',
-              padding: '10px 8px 10px', textDecoration: 'none', color: '#9ca3af',
-              borderTop: '3px solid transparent'
-            }}>
-              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-                <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/>
-                <circle cx="9" cy="7" r="4"/>
-                <path d="M23 21v-2a4 4 0 0 0-3-3.87"/>
-                <path d="M16 3.13a4 4 0 0 1 0 7.75"/>
-              </svg>
-              <span style={{ fontSize: '11px', fontWeight: '500' }}>Manager View</span>
-            </Link>
-          )}
       </nav>
       </div>{/* end column wrapper */}
     </div>
